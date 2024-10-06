@@ -13,7 +13,7 @@ import tensorflow as tf
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras import layers, models
 
-# Set seeds for reproducibility
+
 random.seed(0)
 np.random.seed(0)
 tf.random.set_seed(0)
@@ -33,8 +33,6 @@ def main():
     BATCH_SIZE = 32
     EPOCHS = 5
 
-    # Initialize Kaggle (if needed)
-    # Assuming dataset is already downloaded and extracted using download_dataset.py
 
     # Verify dataset directories
     print("Dataset directories and sample files:")
@@ -75,7 +73,7 @@ def main():
         class_mode='categorical'
     )
 
-    # Validation Generator
+    
     validation_generator = data_gen.flow_from_directory(
         BASE_DIR,
         target_size=(IMAGE_SIZE, IMAGE_SIZE),
