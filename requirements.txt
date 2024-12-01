@@ -5,3 +5,4 @@ pillow
 numpy
 google-cloud-translate
 translate
+google-generativeai
