@@ -1,5 +1,6 @@
-streamlit==1.25.0
-tensorflow==2.17.1
+streamlit==1.38.0
+
+tensorflow== 2.18.0
 pillow
 numpy
 google-cloud-translate
